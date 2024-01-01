@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content-paysystem {
+            margin-top: 18px;
+        }
+
+        .content-paysystem {
+            max-width: 455px;
+            min-height: 75px;
+            background-color: white;
+            border-radius: 10px;
+            padding-top: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 12px;
+            display: flex;
+            align-items: center;
+            color: #30303a;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(66, 66, 66, 0.267);
+        }
+
+        body {
+            user-select: none;
+        }
+
+        .content-paysystem:hover {
+            transition: 0.25s;
+            background-color: rgb(246, 246, 246);
+        }
+
+        .content-paysystem:active {
+            transition: 0.15s;
+            background-color: rgb(236, 236, 236);
+        }
+
+        .paysystem-icon {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% 100%;
+            min-width: 38px;
+            min-height: 39px;
+        }
+
+        .paysystem-qiwi-icon {
+            background-image: url('../../content/cabinet/qiwi_sign_rgb.png');
+        }
+
+        .paysystem-history-icon {
+            background-image: url('../../content/cabinet/history.png');
+        }
+
+        .paysystem-sbrf-icon {
+            background-image: url('../../content/cabinet/sbrf.png');
+        }
+
+        .paysystem-mobile-icon {
+            background-size: 25px 100%;
+            background-image: url('../../content/cabinet/mobile.png');
+        }
+
+        .paysystem-wm-icon {
+            background-image: url('../../content/cabinet/wmlogo_flat_128.png');
+        }
+
+
+        .paysystem-info {
+            margin-left: 15px;
+        }
+
+        .paysystem-info-title {
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+
+        .paysystem-info-desc {
+            margin-top: 3px;
+            font-size: 11px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            max-width: 375px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="content-title">Вывод средств</h1>
+    <p class="content-desc">Специально для вас, мы предусмотрели большое количество популярных платежных систем. Как
+        правило, средства на любую из приведенных ПС приходят в течения 10 минут, но иногда нам требуется время (до 48
+        часов).</p>
+
+    <div class="content-paysystems">
+
+        <div class="content-paysystem" onclick="open_paysystem_QiWi()">
+            <div class="paysystem-icon" style="background-image: url(assets/img/qiwi.png)"></div>
+            <div class="paysystem-info">
+                <p class="paysystem-info-title">QIWI-кошелек</p>
+                <p class="paysystem-info-desc">Пополнение вашего QIWI-кошелька в течение 10 минут!<br>Поддерживаются все
+                    номера СНГ.</p>
+            </div>
+        </div>
+        <div class="content-paysystem" onclick="open_paysystem_SberBank()">
+            <div class="paysystem-icon" style="background-image: url(assets/img/sbrf.png)"></div>
+            <div class="paysystem-info">
+                <p class="paysystem-info-title">Сбербанк</p>
+                <p class="paysystem-info-desc">Пополнение вашей банковской карты Сбербанка в течение 10 минут!<br>Только
+                    для клиент Сбербанка.</p>
+            </div>
+        </div>
+        <div class="content-paysystem" onclick="open_paysystem_Dcity()">
+            <div class="paysystem-icon" style="background-image: url(assets/img/dc_logo.png)"></div>
+            <div class="paysystem-info">
+                <p class="paysystem-info-title">DCity</p>
+                <p class="paysystem-info-desc">Пополнение вашей банковской карты Сбербанка в течение 10 минут!<br>Для
+                    граждан Таджикистана</p>
+            </div>
+        </div>
+        <div class="content-paysystem" onclick="open_paysystem_payeer()">
+            <div class="paysystem-icon" style="background-image: url(assets/img/Payeer.png)"></div>
+            <div class="paysystem-info">
+                <p class="paysystem-info-title">Payeer</p>
+                <p class="paysystem-info-desc">Пополнение вашего кошелька "Payeer" в течение 10 минут!<br>Подходит для
+                    граждан всех стран</p>
+            </div>
+        </div>
+        <div class="content-paysystem" onclick="open_paysystem_history()">
+            <div class="paysystem-history-icon paysystem-icon" style="background-image: url(assets/img/history.png)">
+            </div>
+            <div class="paysystem-info">
+                <p class="paysystem-info-title">История выплат</p>
+                <p class="paysystem-info-desc">Проверяйте статус ваших выплат</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
